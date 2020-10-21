@@ -1,0 +1,269 @@
+@font-face { 
+    font-family: Gill Sans; src: url('./assets/Gill\ Sans.otf'); 
+}
+
+@font-face { 
+    font-family: Gill Sans Light; src: url('./assets/Gill\ Sans\ Light.otf'); 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.Page__Container {
+    overflow-x: hidden;
+    font-family: 'Gill Sans';
+}
+
+.HomePage {
+    width: 100%;
+
+}
+
+.Navbar {
+    height: 4.5rem;
+    display: flex;
+    flex-flow: row;
+    box-sizing: border-box;
+    align-items: center;
+    padding: 0rem 2rem;
+    width: 100%;
+    background-color: #000000;
+}
+
+.Navbar--left {
+    flex: 0.25;
+}
+
+.Navbar--left .Logo a{
+    letter-spacing: 1rem;
+    font-weight: 100;
+    color: #ffffffcc;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.Navbar--middle {
+    flex: 0.5;
+    justify-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.Navbar--middle a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 0rem 4rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+    letter-spacing: 5px;
+}
+
+.Navbar--middle a:hover {
+    color: grey;
+}
+
+.Navbar--middle hr {
+    transform: rotate(90deg) scaleY(3) scaleX(0.7);
+}
+
+.Navbar--right {
+    flex: 0.25;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.Navbar--right img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.Home__img {
+    position: fixed;
+    z-index: -1;
+    left: 0;
+    top: 0;
+}
+
+.Home__img img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.Home__content {
+    height: 99vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to bottom,rgba(20, 20, 20, 0) 80% , rgba(20, 20, 20, 0.883));
+}
+
+.Home__content--small {
+    color: #e20812;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+}
+
+.Home__content--medium {
+    color: #ffffff;
+    font-size: 1.42rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    margin-bottom: 10rem;
+    font-weight: 700;
+}
+
+.Home__content--large {
+    color: #ffffff;
+    font-size: 8rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 8rem;
+    margin-bottom: 3rem;
+    margin-left: 5rem;
+    box-sizing: border-box;
+    font-family: 'Gill Sans Light' !important;
+}
+
+.Explore {
+    background-color: #141414;
+    width: 100vw;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+.Explore__W {
+    margin: 4rem;
+    width: 7rem;
+    height: 7rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 10px;
+    position: relative;
+}
+
+.Explore__heading {
+    position: absolute;
+    top: 3rem;
+    left: 0.5rem;
+}
+
+.dark__logo {
+    margin: -1.5rem;
+}
+
+.Cards {
+    font-size: 2rem;
+    font-weight: 600;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: auto;
+}
+
+.Card__1 {
+    margin: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.Card__1 div {
+    margin-top: 0.7rem;
+}
+
+.Footer {
+    height: 14rem;
+    display: flex;
+    flex-flow: row;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0rem 2rem;
+    background-color: #000000;
+}
+
+.Footer--left {
+    flex: 0.15;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.Footer--left img {
+    width: 7rem;
+    height: 1.9rem;
+    object-fit: cover;
+}
+
+.Footer--middle {
+    flex: 0.2;
+    justify-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.Footer--middle img {
+    color: #ffffff;
+    height: 5rem;
+    width: 5rem;
+}
+
+.Footer--right {
+    flex: 0.2;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.Footer a {
+    margin: 0 1rem;
+    font-size: 0.9rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width: 780px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    .Navbar--middle {
+        display: none;
+    }
+
+    .Navbar--right {
+        flex: 0.8;
+    }
+
+    .Home__content--large {
+        letter-spacing: 4rem;
+    }
+
+    .Cards {
+        width: 90%;
+    }
+}
+
+
+

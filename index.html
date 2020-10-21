@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/png" href="./assets/Pic__4.svg">
+    <title>Dark | The Complete Guide</title>
+</head>
+<body>
+    <div class="Page__Container">
+        <div class="HomePage">
+            <div class="Navbar">
+                <div class="Navbar--left">
+                    <div class="Logo">
+                        <a href="#">DARK</a>
+                    </div>
+                </div>
+
+                <div class="Navbar--middle">
+                    <a href="#who">WHO</a>
+                    <hr>
+                    <a href="#what">WHAT</a>
+                    <hr>
+                    <a href="#when">WHEN</a>
+                </div>
+
+                <div class="Navbar--right">
+                    <a href="https://www.netflix.com/in/title/80100172"><img src="./assets/Pic__1.jpg" alt=""></a>
+                </div>
+            </div>
+
+            <div class="Home__img">
+                <img src="./assets/Pic__2.jpg" alt="">
+            </div>
+
+            <div class="Home__content">
+                <div class="Home__content--small">A Netflix Original</div>
+                <div class="Home__content--large">DARK</div>
+                <div class="Home__content--medium">Everything is connected</div>
+            </div>
+        </div>
+
+        <div class="Explore">
+            <div class="Explore__W" id="who">
+                <div class="Explore__heading">WHO</div>
+                <img src="./assets/Pic__4.svg" alt="" class="dark__logo">
+            </div>
+
+            <div class="Cards" ng-init="who=[
+                    { img: './assets/Pic__3.jpg', name: 'Charlotte Doppler'},
+                    { img: './assets/Pic__5.jpg', name: 'Claudia Tiedemann'},
+                    { img: './assets/Pic__6.jpg', name: 'Katharina Nielsen'},
+                    { img: './assets/Pic__7.jpg', name: 'Bernadette'},
+                    { img: './assets/Pic__8.jpg', name: 'Franziska Doppler'},
+                    { img: './assets/Pic__9.jpg', name: 'Mads Nielsen'},
+                    { img: './assets/Pic__10.jpg', name: 'Adam'},
+                    { img: './assets/Pic__11.jpg', name: 'Silja'},
+                    { img: './assets/Pic__12.jpg', name: 'Ulrich Nielsen'},
+                    { img: './assets/Pic__13.jpg', name: 'Doris Tiedemann'},
+                    { img: './assets/Pic__14.jpg', name: 'Agnes Nielsen'},
+                    { img: './assets/Pic__15.jpg', name: 'Daniel Kahnwald'},
+                    { img: './assets/Pic__16.jpg', name: 'Egon Tiedemann'},
+                    { img: './assets/Pic__17.jpg', name: 'HG Tannahaus'},
+                    { img: './assets/Pic__18.jpg', name: 'Regina Tiedemann'},
+                    { img: './assets/Pic__19.jpg', name: 'Ines Kahnwald'}
+                ]">
+
+                <div class="Card__1" ng-repeat="info in who">
+                    <img ng-src="{{ info.img }}" alt="">
+                    <div>{{ info.name }}</div>
+                </div>
+            </div>
+
+            <div class="Explore__W" id="what">
+                <div class="Explore__heading">WHAT</div>
+                <img src="./assets/Pic__4.svg" alt="" class="dark__logo">
+            </div>
+
+            <div class="Cards" ng-init="what=[
+                    { img: './assets/Pic__20.jpg', name: 'Nuclear Power Plant'},
+                    { img: './assets/Pic__21.jpg', name: 'Triquetra'},
+                    { img: './assets/Pic__22.jpg', name: 'Gun'},
+                    { img: './assets/Pic__23.jpg', name: 'Dead Animals'},
+                    { img: './assets/Pic__24.jpg', name: 'Sic Mundus'},
+                    { img: './assets/Pic__25.jpg', name: 'Emerald Tablet'},
+                    { img: './assets/Pic__26.jpg', name: 'Silver Pendant'},
+                    { img: './assets/Pic__27.jpg', name: 'Golden Pocket Watch'},
+                    { img: './assets/Pic__28.jpg', name: 'Time Machine'},
+                    { img: './assets/Pic__29.jpg', name: 'Church and graveyard'},
+                    { img: './assets/Pic__30.jpg', name: 'Kahnwald Family Home'},
+                    { img: './assets/Pic__31.jpg', name: 'Missing Children'},
+                    { img: './assets/Pic__32.jpg', name: 'Leather Notebook'},
+                    { img: './assets/Pic__33.jpg', name: 'Yellow Barrels'},
+                    { img: './assets/Pic__34.jpg', name: 'A journey through time'},
+                    { img: './assets/Pic__35.jpg', name: 'Bunker and the cabin'}
+                ]">
+
+                <div class="Card__1" ng-repeat="info in what">
+                    <img ng-src="{{ info.img }}" alt="">
+                    <div>{{ info.name }}</div>
+                </div>
+            </div>
+
+            <div class="Explore__W" id="when">
+                <div class="Explore__heading">WHEN</div>
+                <img src="./assets/Pic__4.svg" alt="" class="dark__logo">
+            </div>
+
+            <div class="Cards" ng-init="when=[
+                    { img: './assets/Pic__36.jpg', name: '1921'},
+                    { img: './assets/Pic__37.jpg', name: '1953/1954'},
+                    { img: './assets/Pic__38.jpg', name: '1986/1987'},
+                    { img: './assets/Pic__39.jpg', name: '2019/2020'},
+                    { img: './assets/Pic__40.jpg', name: '2052/2053'},
+                ]">
+
+                <div class="Card__1" ng-repeat="info in when">
+                    <img ng-src="{{ info.img }}" alt="">
+                    <div>{{ info.name }}</div>
+                </div>
+            
+            </div>
+            
+        </div>
+
+        <section class="Footer">
+            <div class="Footer--left">
+                <a href="https://www.netflix.com"><img src="./assets/Logo.png" alt=""></a>
+            </div>
+
+            <div class="Footer--middle">
+                <img src="./assets/Pic__4.svg" class="footer__logo">
+            </div>
+
+            <div class="Footer--right">
+                <a href="#">Privacy and Terms</a>
+                <a href="#">Imprint</a>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -91,7 +91,7 @@ html {
 }
 
 .Home__img img {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     object-fit: cover;
 }
@@ -187,8 +187,18 @@ html {
     text-transform: uppercase;
 }
 
+.Card__1 img {
+    transition: all 0.4s ease;
+}
+
+.Card__1 img:hover {
+    box-shadow: 10px 10px 40px black, -10px -10px 40px black;
+    transform: scale(1.07);
+    cursor: pointer;
+}
+
 .Card__1 div {
-    margin-top: 0.7rem;
+    margin: 0.7rem 0;
 }
 
 .Footer {
